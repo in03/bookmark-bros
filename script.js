@@ -5,7 +5,7 @@ let editingIndex = -1;
 
 function getPersonIdFromHash() {
     const hash = window.location.hash.toLowerCase();
-    const match = hash.match(/^#(ben|gin|phil)$/);
+    const match = hash.match(/^#(ben|gin|phil|kai)$/);
     if (match) {
         return match[0].substring(1); // Remove the # from the hash
     }
@@ -164,6 +164,7 @@ function showLandingPage() {
                     <li><a href="#ben" style="color: var(--primary-color);">Ben's Bookmarks</a></li>
                     <li><a href="#gin" style="color: var(--primary-color);">Gin's Bookmarks</a></li>
                     <li><a href="#phil" style="color: var(--primary-color);">Phil's Bookmarks</a></li>
+                    <li><a href="#kai" style="color: var(--primary-color);">Kai's Bookmarks</a></li>
                 </ul>
                 <div class="landing-emoji">🔍</div>
                 <p class="github-link">

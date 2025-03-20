@@ -13,6 +13,8 @@ Thanks for your encouragement, wisdom, endless experience and the hangs. We've h
 
 I hope you enjoy these quirky bookmarks! Change as you wish haha.
 
+PS: I'd check that AFOTY bookmark every now and again. You might just find you're on it someday 😉
+
 With love and gratitude,
 Caleb`,
         defaultLinks: [
@@ -25,16 +27,31 @@ Caleb`,
     },
     gin: {
         name: "Gin",
-        letter: `Hey Gin!
+        letter: `Dear Gin,
 
-You're absolutely crushing it! I put together these bookmarks thinking of all the amazing things you're interested in. Keep being awesome!
+You are our resident Network Ninja... 🥷
 
-Cheers,
-Your biggest fan`,
+By day, you're catching high-school criminals on their hotspots and VPNs, also by day, you're doing pretty much everything else too! 
+
+I've been so inspired watching you grow and serve. Your initiative and drive are truly remarkable – you see what needs to be done and you just do it 💪
+
+I'm constantly amazed by how hard you work, always on the front-line! Grunt work or highly technical, you always go the extra mile. Your dedication is contagious! ⚡️
+
+It's been a joy and inspiration watching you as a Dad. The way you love and care for your family is beautiful to witness. Your sons are lucky to have you 👦 👶
+
+Most of all, I admire your servant heart and your love for worship. You bring such authenticity to everything you do. 
+
+You have a beautiful voice and an anointed way of leading worship – may God continue to bless your time in His presence! 🎸 🪽 💨
+
+I pray the very best for you and your family. May God continue to guide and bless you all.
+
+With gratitude and prayers,
+Caleb`,
         defaultLinks: [
-            { title: "Tech News Daily", url: "https://technews.example.com" },
-            { title: "Coding Challenges", url: "https://challenges.example.com" },
-            { title: "Game Development Resources", url: "https://gamedev.example.com" }
+            { title: "📸 DPReview", url: "https://www.dpreview.com/" },
+            { title: "🔍 Canon 70-200 f2.8 on Gumtree", url: "https://www.gumtree.com.au/s-canon+70-200+f2.8/k0" },
+            { title: "📱 Mirrorless Rumors", url: "https://www.mirrorlessrumors.com/" },
+            { title: "🪃 Boomerang Fu News", url: "https://www.google.com/search?q=When+will+the+next+Boomerang+Fu+DLC+be+released%3F" }
         ]
     },
     phil: {
@@ -53,12 +70,41 @@ I know these mugs are cheap as chips and not worthy of a decent cold brew, but I
 
 Thanks again for the chats – we'll have to catch up sometime since you're just on the other side of Beenleigh!
 
+P.S: Congrats on the citizenship! 👨🏻‍⚖️
+
 All God's best,
 Caleb`,
         defaultLinks: [
-            { title: "Art Inspiration", url: "https://art.example.com" },
-            { title: "Learning Platform", url: "https://learn.example.com" },
-            { title: "Travel Blog", url: "https://travel.example.com" }
+            { title: "📚 TAFE Student Connect", url: "https://connect.tafeqld.edu.au/" },
+            { title: "☕ Cold Brew Near Me", url: "https://www.google.com/maps/search/cold+brew+near+me" },
+            { title: "🛡️ TryHackMe", url: "https://tryhackme.com/" },
+            { title: "🧱 LEGO New Zealand", url: "https://www.lego.com/en-nz" },
+            { title: "🚁 DJI Drones", url: "https://www.dji.com/nz" }
+        ]
+    },
+    kai: {
+        name: "Kai",
+        letter: `Dear Kai,
+
+Thank you for being such a great colleague and friend. 
+
+I've enjoyed our chats, jokes, and enduring exam logins, QCE and other IT duties together.
+
+Thanks for teaching me SCCM and introducing me to PowerShell. You were a patient teacher and brilliantly thorough. I never could do it quite like you, but I appreciate that you trusted me with what you built over so many years.
+
+I love your hustle for your family. You've saved and spent well, and now you're building them a house! Congratulations! (Proverbs 21:20)
+
+I hope and pray the best for you – that HR will never contact you for a surprise meeting and that AI will never take your job 😅
+
+I'll miss the amazing smell of your lunches and you inviting me to try your marketplace loot.
+
+Praying all the best for you and your family,
+Caleb`,
+        defaultLinks: [
+            { title: "⛽ PetrolSpy", url: "https://petrolspy.com.au/" },
+            { title: "💰 OzBargain", url: "https://www.ozbargain.com.au/" },
+            { title: "🚗 Volkswagen", url: "https://www.volkswagen.com.au/" },
+            { title: "🤖 ChatGPT", url: "https://chat.openai.com/" }
         ]
     }
 };
