@@ -138,6 +138,8 @@ h1 {
     width: 90%;
     max-width: 500px;
     position: relative;
+    max-height: 90vh; /* Limit height to 90% of viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .message-content {
@@ -149,8 +151,10 @@ h1 {
 
 .message-content.thank-you {
     font-family: 'Crimson Text', Georgia, serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    padding: 3rem 2rem; /* Add more horizontal padding */
+    margin: 0.5rem; /* Add margin to prevent text touching edges */
 }
 
 .message-content.encouragement {
@@ -328,5 +332,22 @@ h1 {
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .message-content.thank-you {
+        font-size: 1rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .close-button {
+        padding: 0.5rem; /* Larger touch target on mobile */
     }
 } 

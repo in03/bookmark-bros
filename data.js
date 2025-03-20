@@ -41,10 +41,20 @@ Your biggest fan`,
         name: "Phil",
         letter: `Dear Phil,
 
-Your creativity and passion for learning have always inspired me. I hope these bookmarks help fuel your curiosity and adventures.
+Thanks for being Kiwi. And awesome. Well... same thing.
 
-Best wishes,
-Your friend`,
+I wish I got to know you more before I left! The more I got to know you, the cooler you got: drones, rodeo, Warwick, NZ, lego, cold brew, CyberSecurity...
+
+It's awesome that we're studying the same course. If you don't mind, I'll probably reach out and bug you every now and again. 
+
+Maybe one day we'll work together again in Cyber hey? 😁
+
+I know these mugs are cheap as chips and not worthy of a decent cold brew, but I hope you'll get someone to bug you about having a mocha every now and again 😂
+
+Thanks again for the chats – we'll have to catch up sometime since you're just on the other side of Beenleigh!
+
+All God's best,
+Caleb`,
         defaultLinks: [
             { title: "Art Inspiration", url: "https://art.example.com" },
             { title: "Learning Platform", url: "https://learn.example.com" },
