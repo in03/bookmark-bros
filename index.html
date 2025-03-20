@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😎</text></svg>">
+    <title>Bookmark Bros</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bookmark Bros 😎</h1>
+            <div class="header-buttons">
+                <button id="resetButton" class="action-button">Reset Links</button>
+                <button id="madeForYouButton" class="action-button">I Made This For You</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="linkContainer" class="link-container">
+                <!-- Links will be dynamically added here -->
+            </div>
+
+            <button id="addLinkButton" class="add-link-button">
+                Add New Link
+            </button>
+        </main>
+
+        <!-- Modal for adding/editing links -->
+        <div id="linkModal" class="modal">
+            <div class="modal-content">
+                <h2 id="modalTitle">Add New Link</h2>
+                <form id="linkForm">
+                    <input type="text" id="linkTitle" placeholder="Link Title" required>
+                    <input type="url" id="linkUrl" placeholder="https://example.com" required>
+                    <div class="modal-buttons">
+                        <button type="submit">Save</button>
+                        <button type="button" class="cancel-button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Message Modal -->
+        <div id="messageModal" class="modal">
+            <div class="modal-content message-content">
+                <button class="close-button">&times;</button>
+                <div id="messageText"></div>
+            </div>
+        </div>
+
+        <!-- Confirmation Modal -->
+        <div id="confirmModal" class="modal">
+            <div class="modal-content">
+                <h2>Are you sure?</h2>
+                <p>This will reset all links to default values.</p>
+                <div class="modal-buttons">
+                    <button id="confirmYes">Yes, Reset</button>
+                    <button id="confirmNo">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 
