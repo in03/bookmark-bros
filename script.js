@@ -166,6 +166,10 @@ function showLandingPage() {
                     <li><a href="#phil" style="color: var(--primary-color);">Phil's Bookmarks</a></li>
                 </ul>
                 <div class="landing-emoji">🔍</div>
+                <p class="github-link">
+                    Can't find yourself here? Think I should write you a special letter and make you some quirky default bookmarks?<br>
+                    <a href="https://github.com/in03/bookmark-bros/issues" target="_blank">Write an issue here! 📝</a>
+                </p>
             </div>
         </div>
     `;
