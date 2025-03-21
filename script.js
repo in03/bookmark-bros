@@ -3,6 +3,9 @@ let personId = null;
 let links = [];
 let editingIndex = -1;
 
+// Add audio player variable
+let currentAudio = null;
+
 function getPersonIdFromHash() {
     const hash = window.location.hash.toLowerCase();
     const match = hash.match(/^#(ben|gin|phil|kai)$/);
@@ -315,8 +318,64 @@ function showThankYouMessage() {
     messageContent.classList.add('thank-you');
     messageContent.classList.remove('encouragement');
     const messageText = document.getElementById('messageText');
-    messageText.innerHTML = PEOPLE_DATA[personId].letter.replace(/\n/g, '<br>');
+    
+    // Create audio control button
+    const audioButton = document.createElement('button');
+    audioButton.className = 'audio-control';
+    audioButton.innerHTML = '🤖🔊';
+    audioButton.style.position = 'absolute';
+    audioButton.style.top = '0.5rem';
+    audioButton.style.left = '0.5rem';
+    
+    // Add letter content
+    const letterContent = PEOPLE_DATA[personId].letter;
+    messageText.innerHTML = letterContent.replace(/\n/g, '<br>');
+    
+    // Add audio button if audio exists for this person
+    const audioPath = `./voices/${personId}_letter.mp3`;
+    
+    // Create audio element
+    const audio = new Audio(audioPath);
+    audio.addEventListener('error', () => {
+        audioButton.style.display = 'none';  // Hide button if audio fails to load
+    });
+    
+    // Add audio button functionality
+    let isPlaying = false;
+    audioButton.addEventListener('click', () => {
+        if (isPlaying) {
+            audio.pause();
+            audioButton.innerHTML = '🤖🔊';
+        } else {
+            if (currentAudio) {
+                currentAudio.pause();  // Stop any other playing audio
+            }
+            audio.play();
+            currentAudio = audio;
+            audioButton.innerHTML = '🤖⏸️';
+        }
+        isPlaying = !isPlaying;
+    });
+    
+    // Add button to modal
+    messageContent.insertBefore(audioButton, messageContent.firstChild);
+    
     messageModal.style.display = 'flex';
+    
+    // Play audio automatically
+    audio.play();
+    isPlaying = true;
+    currentAudio = audio;
+    audioButton.innerHTML = '🤖⏸️';
+    
+    // Stop audio when modal is closed
+    const closeButton = messageContent.querySelector('.close-button');
+    closeButton.addEventListener('click', () => {
+        if (audio) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });
 }
 
 async function visitLink(url, title) {
