@@ -1,4 +1,4 @@
-# 🔖 Bookmark Boss
+# 🔖 Bookmark Bros
 
 A quirky, personalized bookmark manager created as a gift for some amazing coworkers. Because who doesn't need more bookmarks in their life? 😄
 
